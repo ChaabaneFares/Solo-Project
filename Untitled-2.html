@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="Untitled-2.css" rel="stylesheet">
+    <title>WAR</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>  
+<div></div>
+<div class="header-wrapper">
+    <img id="image" src =" https://resonatemusic.ca/wp-content/uploads/2017/07/studio_header.jpg" /*src = "https://i.pinimg.com/564x/85/35/84/853584e1122dcf93fac5a81ec64f4e74.jpg"*/ >
+</div>
+</head>
+
+
+
+
+<body>
+    <div id="menu">
+        <ul  class="menu-wrapper">
+            <li><a href="#home" onclick="showHome()" >Home</a></li>
+            <li><a href="#why-us" onclick="showWhy()">Why us?</a></li>
+            
+            <select class="services" id="services" ><option id="serv"><li onclick="">Services </li></option>
+                
+                <option><iframe width="420" height="315" src="https://www.youtube.com/watch?v=PamIwDGaT1w&ab_channel=AndrewMasters">recording</iframe></option>
+                <option><a href="https://www.youtube.com/watch?v=Rdw771nS5YA&ab_channel=WavesAudio"></a>mixing</option>
+                <option><a href="https://www.youtube.com/watch?v=h-QCQiOkufc"></a>mastering</option>
+                <option><a href ="https://www.youtube.com/watch?v=eVLeH_myFZc&t=201s&ab_channel=CurtissKingTV"></a>music distribution</option>
+            
+            </select></li> 
+            <li><a href="#FAQ" onclick="showFaq()" >FAQ</a></li>
+            <li><a href= "#contact" onclick="showCont()">Contact us</a></li>
+            <li><a href = "#login-signup-user" onclick="showLogin()"> login or sign up</a></li>
+            <li><a href ="#calendar" onclick="showCalendar()">booking</a></li>
+           <li><a href="#HC"   onclick="showHelpcenter()">Help</a></li>
+        </ul>
+           
+        </div>
+        <div id="Main">
+    <div id="home">
+        <p>	WAR is an independent record label based in Tunisia, Tunis. Our aim is to support and promote emerging and established artists across the country; releasing music, organising tours and securing press coverage for the acts signed to the label. We are a small company that manufactures, sells, promotes and distributes recordings of associated music artists.
+            We developed the necessary contacts and experience to propel this new label and its artists to success. </p>
+      
+    </div>
+    
+    
+    <div id="why-us">
+    <p>
+    This business plan will demonstrate how WAR Label will create strong brand recognition within both local and global music scene and generate profit long-term through royalties, ticket sales, merchandise both online and through direct selling points and other revenue streams.
+    </p>
+    </div>
+    
+    <div id="FAQ">
+    <ul>
+        QUESTIONS:
+    
+    
+        <li>Q. What is the rate for studio time?</li>
+    <li> A. $65.00 per hour + GST. This includes the audio engineer, producer, and facility.</li>
+        
+        <li> Q. Is it possible to pay a flat rate per song?</li>
+        <li>A. Yes, but every project is different. After discussing your specific project we will be able to quote you a flat rate charge.</li>
+        
+        <li>Q. Can you make me a custom beat or do I have to just pick a pre-made one?</li>
+            <li>A. We absolutely do custom work. Contact us today with your ideas for a custom beat or instrumental.</li>
+        
+        <li>Q. Do you only record musicians with previous studio experience?</li>
+            <li>A. Anyone can come and record a song at Resonate Music. Established artists and those just starting out are all welcomed.</li>
+        
+        <li>Q. I d like to learn how to record and produce music, do you teach that?</li>
+            <li>A. We have specially designed courses to help with both audio engineering and digital music production. Click here to learn more about our Recording and Digital Production classes.</li>
+        
+       <li> Q. Is your studio sound treated?</li>
+        <li>A. All parts of our studio are constructed and treated for both sound proofing and acoustics.</li>
+        
+        <li>Q. I m thinking of surprising a friend with some studio time. What would be the best way to do this?</li>
+            <li>A. What you want is a Resonate Studio Time Gift Card.  You can purchase any number of studio hours on a gift card and the gifted can book their sessions after receiving the card. Resonate Music gift cards never expire.</li>
+    
+    
+    </ul>
+    </div> 
+    <div id="contact" class="cont">
+    <p>
+      You can contact us on 
+    
+            <a href ="https://www.facebook.com/warmusictn">facebook</a>
+     or on <a href="https://www.instagram.com/war_label/">instagram</a>
+     
+    </p>
+    <p> Book your session now
+        <a href="#calendar">Studio weekly planning</a>
+    </p>
+    </div>
+    <div id="HC">
+        <p >
+          HELP CENTER 
+        </p>
+        <input id="help" type="text" placeholder="If you have any questions or suggestions, please leave us a message here" />
+      <button  onclick="sent()">send </button>
+      </div>
+    
+    <form id="login-signup-user">
+        
+        <div id="namebox">
+            <p> Enter your email here</p>
+         <input id = "useremail" type="email" placeholder="your email" onchange='myFunction()' /> 
+            </div>
+            <div id ='passwordbox'>
+            <p> Enter your password here</p>
+            <input id = "userpassword" type="password" placeholder="your password" onchange="myFunction()"/>
+          </div>
+          <div id="sub">
+            <button  onclick="check()" >login</button>
+           </div>    
+           <div>
+            <button onclick="securityCheck()">sign-up </button>
+           </div>
+           <div id="calendar"> 
+                <h2>Book a session date</h2>
+                  <input type="date" id="day" name="day" onchange="getDate()">
+                  <button  id="day_check" onclick="checkDate()">Book</button>
+                
+                </div>
+            </form>     
+        </div>
+       
+  
+    <script src = 'index.js'></script>
+    <script src='https://code.jquery.com/jquery-2.2.4.js'></script>
+</body>
+
+</html>
